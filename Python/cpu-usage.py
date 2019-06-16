@@ -1,8 +1,9 @@
-import psutil                                     #import tsutil
+import psutil
 import time
+import sys
 
 def printit():
     while(1):
-        print(psutil.cpu_percent())
-        time.sleep(3)
+        print('{:06.2f}'.format(psutil.cpu_percent()), end='\r')
+        time.sleep(1)
 printit()
