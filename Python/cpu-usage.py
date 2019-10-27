@@ -1,6 +1,5 @@
 import psutil
 import time
-import sys
 
 def printit():
     while(1):
